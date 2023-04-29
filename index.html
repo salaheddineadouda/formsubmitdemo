@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar_SA" >
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='main.js'></script>
+    <style>
+        @import url("https://use.typekit.net/asy1zer.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto-sans-arabic", sans-serif;;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f8ff;
+
+}
+
+.containere{
+    margin:0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containere h1{
+    color: #333;
+}
+
+.containere .tab{
+    position: relative;
+    background: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.containere .tab input{
+    appearance: none;
+
+}
+
+.containere .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.containere .tab label::after{
+    content: '+';
+    position: absolute;
+    left: 20px;
+    font-size: 2rem;
+    color: rgba(0,0,0,0.1);
+    transition: transform 1s;
+}
+
+.containere .tab:hover label::after{
+    color: #333;
+}
+
+.containere .tab input:checked ~ label::after{
+    
+    transform: rotate(135deg);
+
+}
+
+.containere .tab label h2{
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+.containere .tab:nth-child(n) label h2{
+
+    background: linear-gradient(135deg,#ffec8b,#ffbf00);
+}
+
+
+
+
+.containere .tab label h3{
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
+
+}
+
+.containere .tab .content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.containere .tab input:checked ~ .content{
+
+    max-height: 100vh;
+
+
+}
+
+.containere .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="total-container">
+        <div class="containere">
+       <h1>الأسئلة المتكررة</h1>
+    <div class="tab">
+
+        <input type="radio" name="acc" id="acc1">
+        <label for="acc1">
+            <h2>01</h2>
+            <h3>متى يصل لي الطلب؟</h3>
+        </label>
+
+        <div class="content"><p>مزود بتطبيق فيس تايم ويمكن الوصول إليه في المناطق التي يسمح فيها مشغلو الشبكة باستخدام فيس تايم</p>
+        </div>
+    </div>
+
+
+    <div class="tab">
+
+        <input type="radio" name="acc" id="acc2">
+        <label for="acc2">
+            <h2>02</h2>
+            <h3>هل يوجد توصيل خارج البلد؟</h3>
+        </label>
+
+        <div class="content"><p>مزود بتطبيق فيس تايم ويمكن الوصول إليه في المناطق التي يسمح فيها مشغلو الشبكة باستخدام فيس تايم</p>
+        </div>
+    </div> 
+    </div>
+    </div>
+
+    <script>
+
+
+	
+
+        
+
+    </script>
+    
+    
+</body>
+</html>
